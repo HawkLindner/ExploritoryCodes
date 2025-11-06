@@ -1,5 +1,10 @@
+package Java;
 import java.util.Random;
 public class Alg {
+    /*
+     * This method sorts an array using the bubble sort algorithm and returns
+     * the sorted array.
+     */
     public static int[] sort(int[] arr){
         for(int i = 0 ; i < arr.length - 1 ; i++){
             for(int j = 0 ; j < arr.length - i - 1 ; j++){
@@ -12,6 +17,11 @@ public class Alg {
         }
         return arr;
     }
+    /*
+     * This search requires a sorted array. It uses the bubble search algorithm
+     * to find the target in the array and returns its index if found. If not
+     * found, it throws an exception.
+     */
     public static int bubbleSearch(int[] arr, int target){
         int temp = arr.length / 2;
         for(int i = 0 ; i < arr.length ; i++){
@@ -44,7 +54,6 @@ public class Alg {
         }
         throw new IllegalArgumentException("Target not found in array");
     }
-
     public static void main(String[] args) {
         int[] arr = new int[10];
         Random rand = new Random();
