@@ -54,6 +54,7 @@ public class Alg {
         }
         throw new IllegalArgumentException("Target not found in array");
     }
+
     public static void main(String[] args) {
         int[] arr = new int[10];
         Random rand = new Random();
